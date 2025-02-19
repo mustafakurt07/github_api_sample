@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Fordtask2" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/github_bg_dark</item>
+        <item name="colorSurface">@color/github_surface_dark</item>
+        <item name="android:colorBackground">@color/github_bg_dark</item>
+        <item name="colorPrimary">@color/github_accent</item>
+        <item name="colorPrimaryVariant">@color/github_accent</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textColorPrimary">@color/github_text_primary_dark</item>
+        <item name="android:textColorSecondary">@color/github_text_secondary_dark</item>
+        <item name="colorControlNormal">@color/github_text_primary_dark</item>
+        <item name="android:statusBarColor">@color/github_surface_dark</item>
+        <item name="android:navigationBarColor">@color/github_bg_dark</item>
+    </style>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Light Theme Colors -->
+    <color name="github_bg_light">#FFFFFF</color>
+    <color name="github_surface_light">#F6F8FA</color>
+    <color name="github_border_light">#D0D7DE</color>
+    <color name="github_text_primary_light">#24292F</color>
+    <color name="github_text_secondary_light">#57606A</color>
+    <color name="github_accent">#0969DA</color>
+    <color name="github_success">#2DA44E</color>
+    <color name="github_warning">#9A6700</color>
+    <color name="github_error">#CF222E</color>
+
+    <!-- Dark Theme Colors -->
+    <color name="github_bg_dark">#0D1117</color>
+    <color name="github_surface_dark">#161B22</color>
+    <color name="github_border_dark">#30363D</color>
+    <color name="github_text_primary_dark">#C9D1D9</color>
+    <color name="github_text_secondary_dark">#8B949E</color>
+
+    <!-- Language Colors -->
+    <color name="language_kotlin">#A97BFF</color>
+    <color name="language_java">#B07219</color>
+    <color name="language_javascript">#F1E05A</color>
+    <color name="language_python">#3572A5</color>
+    <color name="language_default">#8B949E</color>
+</resources>
