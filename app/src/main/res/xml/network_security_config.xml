@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Burada ağ güvenlik ayarlarını belirleyeceksiniz -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">example.com</domain>
+    </domain-config>
+</network-security-config>

@@ -45,7 +45,6 @@ Bu proje, GitHub API kullanarak bir kullanıcının repolarını listeleyen Andr
 ### Diğer
 - BuildConfig yapılandırması
 - Gradle Kotlin DSL
-- ViewBinding
 - GridLayoutManager
 - Material Design Components
 
@@ -53,7 +52,6 @@ Bu proje, GitHub API kullanarak bir kullanıcının repolarını listeleyen Andr
 
 1. **Loglama**: Detaylı loglama sistemi implement edilmedi.
 2. **Birim Testler**: Unit ve UI testleri eklenmedi.
-3. **Ekran Döndürme Desteği**: Ekran döndürme durumunda state yönetimi optimize edilmedi.
 
 ### Offline Kullanım
 - Veriler Room veritabanında saklanır
@@ -70,10 +68,10 @@ Bu proje, GitHub API kullanarak bir kullanıcının repolarını listeleyen Andr
 
 ## Güvenlik
 
-- API anahtarları BuildConfig üzerinden yönetilir
-- Base URL'ler build variantlarına göre yapılandırılabilir
-- ProGuard kuralları uygulanır
-- Network security configuration kullanılır
+- API anahtarları BuildConfig üzerinden yönetildi
+- Base URL'ler build variantlarına göre yapılandırılabilirdi.(Test projesi oldugu için yapmadım sadece BuildConfigten okudum)
+- ProGuard kuralları uygulanabilirdi
+- Network security configuration kullandım
 
 2. **Veri Güvenliği**:
    - Veritabanı şifrelenmeli
@@ -89,3 +87,45 @@ Bu proje, GitHub API kullanarak bir kullanıcının repolarını listeleyen Andr
    - Root detection eklenmeli
    - Debugging devre dışı bırakılmalı
    - Memory dumping engellemeli 
+
+📂 com.example.githubapp
+├── 📂 data                      # Veri Katmanı
+│   ├── 📂 local                 # Room Database ve DAO
+│   │   ├── RepoDao.kt
+│   │   ├── RepoEntity.kt
+│   │   ├── AppDatabase.kt
+│   ├── 📂 remote                # API Servisleri
+│   │   ├── GithubApiService.kt
+│   │   ├── ApiResponse.kt
+│   ├── 📂 repository            # Repository Katmanı
+│   │   ├── GithubRepositoryImpl.kt
+│   ├── 📂 mapper                # Entity ↔ Domain Dönüştürme
+│   │   ├── RepoMapper.kt
+│   ├── 📂 datastore             # DataStore Kullanımı
+│   │   ├── UserPreferences.kt   # Kullanıcı tercihlerinin saklandığı sınıf
+│   │   ├── PreferencesDataStore.kt  # DataStore işlemleri yönetimi
+│
+├── 📂 domain                    # İş Kuralları Katmanı
+│   ├── 📂 model                 # Model Katmanı (Kullanıcıya sunulan veri yapıları)
+│   │   ├── GithubRepo.kt
+│   ├── 📂 repository            # Arayüz (Repository Interface)
+│   │   ├── GithubRepository.kt
+│   ├── 📂 usecase               # Use Case’ler (İş kuralları)
+│   │   ├── GetReposUseCase.kt
+│
+├── 📂 presentation               # Sunum Katmanı
+│   ├── 📂 ui
+│   │   ├── 📂 components        # UI Bileşenleri (Reusable Composables)
+│   │   │   ├── RepoItem.kt
+│   │   │   ├── ErrorMessage.kt
+│   │   │   ├── LoadingIndicator.kt
+│   ├── 📂 screen                # UI Ekranları
+│   │   ├── RepoScreen.kt
+│   │   ├── RepoListContent.kt
+│   ├── 📂 viewmodel             # ViewModel Katmanı
+│   │   ├── RepoViewModel.kt
+│   ├── MainActivity.kt
+│
+├── 📜 AppModule.kt               # Hilt Dependency Injection Modülü
+├── 📜 GithubApp.kt               # Application Class
+
