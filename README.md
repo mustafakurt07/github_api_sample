@@ -52,7 +52,6 @@ Bu proje, GitHub API kullanarak bir kullanıcının repolarını listeleyen Andr
 ### Diğer
 - BuildConfig yapılandırması
 - Gradle Kotlin DSL
-- GridLayoutManager
 - Material Design Components
 
 ## Atlanılan Kısımlar (Test Projesi Olması Nedeniyle)
