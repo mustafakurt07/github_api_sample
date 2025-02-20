@@ -96,10 +96,4 @@ Bu proje, GitHub API kullanarak bir kullanıcının repolarını listeleyen Andr
    - Root detection eklenmeli
    - Debugging devre dışı bırakılmalı
    - Memory dumping engellemeli
-  
- ## Ekran Görüntüleri
- ![Screenshot_1740012059](https://github.com/user-attachments/assets/08813b60-6bf3-4d46-b77e-ead566b7ae45)
-![Screenshot_1740012056](https://github.com/user-attachments/assets/37ae45c8-ae55-4cd4-bab9-54413e4d3deb)
-![Screenshot_1740012054](https://github.com/user-attachments/assets/b875829d-3684-439d-a555-8a825b4ac2f4)
-![Screenshot_1740012025](https://github.com/user-attachments/assets/81d54632-a142-4d0c-9512-518116f2ff32)
 
