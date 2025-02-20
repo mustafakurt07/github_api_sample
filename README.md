@@ -15,6 +15,7 @@ Bu proje, GitHub API kullanarak bir kullanıcının repolarını listeleyen Andr
 - Offline kullanım için local veritabanı desteği
 - 1, 2 veya 3 sütunlu görünüm seçeneği
 - Repository detaylarını Toast mesajı ile gösterme
+- Kullanıcı seçimlerini kaydetme ve uygulama kapansa bile seçimlerini koruma
 
 ## Kullanılan Teknolojiler
 
