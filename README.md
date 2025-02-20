@@ -75,21 +75,23 @@ Bu proje, GitHub API kullanarak bir kullanıcının repolarını listeleyen Andr
 ## Güvenlik
 
 - API anahtarları BuildConfig üzerinden yönetildi
-- Base URL'ler build variantlarına göre yapılandırılabilirdi.(Test projesi oldugu için yapmadım sadece BuildConfigten okudum)
+- Base URL'ler build variantlarına göre yapılandırılabilirdi.(Test projesi oldugu için yapılmadı)
 - ProGuard kuralları uygulanabilirdi
 - Network security configuration kullandım
 
-2. **Veri Güvenliği**:
+## Alınabilecek Önlemler
+
+1. **Veri Güvenliği**:
    - Veritabanı şifrelenmeli
    - Hassas veriler encrypted olarak saklanmalı
    - ProGuard/R8 code obfuscation kullanılmalı
 
-3. **Network Güvenliği**:
+2. **Network Güvenliği**:
    - HTTPS zorunlu kılınmalı
    - Network security configuration dosyası eklenmeli
    - Certificate pinning implementasyonu yapılmalı
 
-4. **Uygulama Güvenliği**:
+3. **Uygulama Güvenliği**:
    - Root detection eklenmeli
    - Debugging devre dışı bırakılmalı
    - Memory dumping engellemeli
