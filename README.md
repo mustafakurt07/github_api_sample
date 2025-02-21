@@ -5,7 +5,7 @@ Bu proje, GitHub API kullanarak bir kullanıcının repolarını listeleyen Andr
 ## KURULUM
 1. `local.properties irisindeki değerlere kendi api bilgilerinizi ekleyin ve sonra proje çalıştırın.
 2. İçindeki örnek değerleri kendi API bilgilerinizle değiştirin:
-   - BASE_URL = API_BASE_URL_ORNEK
+   - BASE_URL= https://api.github.com/
    - GITHUB_API_TOKEN = API_TOKEN_ORNEK
 
 ## Özellikler
